@@ -21,7 +21,7 @@ class Maquina_hacer_velas():
         if self.color == "rojo":
            print( "El color que has insertado es rojo, por lo cual se puede continuar con el proceso.")
         else:
-            print( f"El color que has insertado no es rojo, es, por lo cual no se puede continuar con el proceso.")
+            print( f"El color que has insertado no es rojo, por lo cual no se puede continuar con el proceso.")
    
     def verter_cera_molde(self):
         if self.verter_cera == True:
@@ -53,3 +53,8 @@ time.sleep(2)
 print(vela2.derretir_cera())
 vela2.insertar_color()
 vela2.verter_cera_molde()
+
+
+
+# PRUEBAS UNITARIAS 
+import unittest
