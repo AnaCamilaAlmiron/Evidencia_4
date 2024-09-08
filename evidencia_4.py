@@ -50,7 +50,7 @@ vela1 = MaquinaHacerVelas(True, "rojo", True)
 vela2 = MaquinaHacerVelas(False, "azul", False)
 
 # Proceso de fabricación de la primera vela (correcto)
-print(vela1.__str__())
+print(vela1)
 time.sleep(5)
 print("--------------------------")
 print("Proceso correcto, comienza el funcionamiento")
