@@ -28,7 +28,6 @@ class TestMaquinaHacerVelas(unittest.TestCase):
         # Caso cuando se inserta un color incorrecto (no rojo).
         resultado = self.prueba_incorrecta.insertar_color()
         self.assertEqual(resultado, "El color que has insertado no es el correcto, por lo cual no se puede continuar con el proceso.")
-    
     def test_verter_cera_correcto(self):
         # Caso cuando está listo para verter la cera.
         resultado = self.prueba_correcta.verter_cera_molde()
