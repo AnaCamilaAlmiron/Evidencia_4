@@ -1,12 +1,12 @@
 import unittest
 from unittest.mock import patch
-from evidencia_4 import Maquina_hacer_velas
+from evidencia_4 import MaquinaHacerVelas
 
 class TestMaquinaHacerVelas(unittest.TestCase):
     def setUp(self):
         # Creamos dos instancias para pruebas: una con parametros correctos y otra con parametros incorrectos.
-        self.prueba_correcta = Maquina_hacer_velas(True, "rojo", True)
-        self.prueba_incorrecta = Maquina_hacer_velas(False, "azul", False)
+        self.prueba_correcta = MaquinaHacerVelas(True, "rojo", True)
+        self.prueba_incorrecta = MaquinaHacerVelas(False, "azul", False)
         
     
     def test_derretir_cera_correcto(self):
