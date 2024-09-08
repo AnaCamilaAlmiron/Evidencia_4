@@ -11,7 +11,7 @@ class MaquinaHacerVelas:
             for i in range(10, 80, 10):
                 print(f"La máquina está calentando a {i} grados hasta que la cera se derrita...")
                 time.sleep(1)
-            return "La cera llegó a 80 grados, por lo cual se derritió y está lista para ser vertida en el molde."
+            return "La cera llegó a 80 grados, por lo cual se derritió por completo."
         else:
             return "La máquina no puede derretir la cera, controlar la temperatura."
         
@@ -23,7 +23,7 @@ class MaquinaHacerVelas:
    
     def verter_cera_molde(self):
         if self.verter_cera:
-            return "Está listo para verter la cera al molde."
+            return "Está listo para verter la cera en los moldes."
         else:
             return "No está listo para verter la cera al molde. Controlar si la cera está a temperatura correcta."
 
@@ -51,7 +51,7 @@ vela2 = MaquinaHacerVelas(False, "azul", False)
 
 # Proceso de fabricación de la primera vela (correcto)
 print(vela1.__str__())
-time.sleep(2)
+time.sleep(5)
 print("--------------------------")
 print("Proceso correcto, comienza el funcionamiento")
 vela1.fabricar_vela()

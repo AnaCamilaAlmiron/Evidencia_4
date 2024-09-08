@@ -12,12 +12,12 @@ class TestMaquinaHacerVelas(unittest.TestCase):
     def test_derretir_cera_correcto(self):
         # Caso cuando se puede derretir la cera.
         resultado = self.prueba_correcta.derretir_cera()
-        self.assertEqual(resultado, "La cera llego a 80 grados, por lo cual se derritio y esta lista para ser vertida en el molde.")
+        self.assertEqual(resultado, "La cera llegó a 80 grados, por lo cual se derritió por completo.")
     
     def test_derretir_cera_incorrecto(self):
         # Caso cuando no se puede derretir la cera.
         resultado = self.prueba_incorrecta.derretir_cera()
-        self.assertEqual(resultado, "La maquina no puede derretir la cera, controlar la temperatura.")
+        self.assertEqual(resultado, "La máquina no puede derretir la cera, controlar la temperatura.")
     
     def test_insertar_color_correcto(self):
         # Caso cuando se inserta el color correcto (rojo).
@@ -27,17 +27,17 @@ class TestMaquinaHacerVelas(unittest.TestCase):
     def test_insertar_color_incorrecto(self):
         # Caso cuando se inserta un color incorrecto (no rojo).
         resultado = self.prueba_incorrecta.insertar_color()
-        self.assertEqual(resultado, "El color que has insertado no es rojo, por lo cual no se puede continuar con el proceso.")
+        self.assertEqual(resultado, "El color que has insertado es {self.color}, por lo cual no se puede continuar con el proceso.")
     
     def test_verter_cera_correcto(self):
         # Caso cuando está listo para verter la cera.
         resultado = self.prueba_correcta.verter_cera_molde()
-        self.assertEqual(resultado, "Esta listo para verter la cera al molde.")
+        self.assertEqual(resultado, "Está listo para verter la cera en los moldes.")
     
     def test_verter_cera_incorrecto(self):
         # Caso cuando no está listo para verter la cera.
         resultado = self.prueba_incorrecta.verter_cera_molde()
-        self.assertEqual(resultado, "No esta listo para verter la cera al molde, controlar si se encuentra la cera en el tanque a temperatura correcta.")
+        self.assertEqual(resultado, "No está listo para verter la cera al molde. Controlar si la cera está a temperatura correcta.")
         
         
 
