@@ -19,7 +19,7 @@ class MaquinaHacerVelas:
         if self.color == "rojo":
             return "El color que has insertado es rojo, por lo cual se puede continuar con el proceso."
         else:
-            return f"El color que has insertado es {self.color}, por lo cual no se puede continuar con el proceso."
+            return f"El color que has insertado no es el correcto, por lo cual no se puede continuar con el proceso."
    
     def verter_cera_molde(self):
         if self.verter_cera:
